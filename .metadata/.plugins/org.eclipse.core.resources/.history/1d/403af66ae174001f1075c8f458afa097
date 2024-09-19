@@ -1,8 +1,0 @@
-package jungle.tree;
-
-public class Sparrow{
-
-	void chirp() {
-		System.out.println("Sparrow is chirping...");
-	}
-}

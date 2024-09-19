@@ -1,7 +1,0 @@
-package jungle.river;
-
-public class Frog {
-	void jump() {
-		System.out.println("Frog is jumping...");
-	}
-}
