@@ -1,0 +1,24 @@
+// Java program to demonstrate use of static blocks
+
+public class Test
+{
+    // static variable
+     int a = 10;
+    static int b;
+    
+    // static block
+    static {
+        System.out.println("Static block initialized.");
+        b = a * 4;
+    }
+    Test(){
+    	System.out.println("Constructor called    ");
+    }
+
+    public static void main(String[] args)
+    {
+       System.out.println("from main");
+       System.out.println("Value of a : "+a);
+       System.out.println("Value of b : "+b);
+    }
+}

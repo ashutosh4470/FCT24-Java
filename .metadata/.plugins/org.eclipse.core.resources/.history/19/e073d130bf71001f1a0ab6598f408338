@@ -1,0 +1,25 @@
+
+public class SingleLevelTest {
+	public static void main(String[] args) {
+		Person person = new Person('M', 22,"Ashutosh");
+		System.out.println(""+person);
+	}
+}
+
+class Person{
+	char gender;
+	int age;
+	String name;
+	
+	public Person(char gender, int age, String name) {
+		super();
+		this.gender = gender;
+		this.age = age;
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [gender=" + gender + ", age=" + age + ", name=" + name + "]";
+	}
+}

@@ -1,0 +1,10 @@
+package jungle.river;
+
+public class Tortoise {
+	void swim() {
+		System.out.println("Tortoise is swimming...");
+	}
+	void walking(){
+		System.out.println("Tortoise is walking...");
+	}
+}

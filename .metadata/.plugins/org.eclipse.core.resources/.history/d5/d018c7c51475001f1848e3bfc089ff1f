@@ -1,0 +1,5 @@
+package main.treatment;
+
+public class HeartSurgery extends Treatment{
+
+}

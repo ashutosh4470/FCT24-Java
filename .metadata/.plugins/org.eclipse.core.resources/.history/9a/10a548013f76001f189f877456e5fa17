@@ -1,0 +1,10 @@
+package interfaces;
+
+public class AnimalTest {
+
+}
+
+abstract class Animal{
+	protected String name;
+	protected String type;
+}

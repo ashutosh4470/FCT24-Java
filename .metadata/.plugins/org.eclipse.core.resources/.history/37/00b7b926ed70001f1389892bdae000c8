@@ -1,0 +1,39 @@
+
+public class CricketTest {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+class Cricketer{
+	int rank;
+	String cricketerName;
+	int age;
+	float strikeRate;
+	int numberOfCenturies;
+	int numberOfFiftees;
+	int numberOfSixers;
+	int numberOfBoundries;
+	int totalScore;
+	
+	public void hitSixer() {
+		numberOfSixers++;
+		totalScore+=6;
+	}
+	public void hitFourRuns() {
+		numberOfBoundries++;
+		totalScore+=4;
+	}
+	public void makeOneRun() {
+		totalScore++;
+	}
+	void printPlayerInfo() {
+		System.out.println("Player Rank : "+rank);
+		System.out.println("Player Name : "+cricketerName);
+		System.out.println("Player Number of Boundries: "+numberOfBoundries);
+		System.out.println("Player Rank : "+rank);
+		System.out.println("Player Rank : "+rank);
+	}
+}

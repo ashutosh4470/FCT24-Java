@@ -1,0 +1,28 @@
+package interfaces;
+
+public class AnimalTest {
+
+}
+
+interface Eatable{
+	void eat();
+}
+
+abstract class Animal{
+	protected String name;
+	protected String type;
+	protected String habitate;
+	
+	public Animal(String name, String type, String habitate) {
+		super();
+		this.name = name;
+		this.type = type;
+		this.habitate = habitate;
+	}
+	
+	public abstract void makeSound();
+	public abstract void move();
+	public void displayInfo() {
+		System.out.println("Name : "+name+", Type : "+type+", Habitate : "+habitate);
+	}
+}

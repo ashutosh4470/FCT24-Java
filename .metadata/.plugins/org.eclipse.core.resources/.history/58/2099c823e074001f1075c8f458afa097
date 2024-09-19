@@ -1,0 +1,8 @@
+package jungle.river;
+
+public class Frog {
+	public Frog() {
+	public void jump() {
+		System.out.println("Frog is jumping...");
+	}
+}

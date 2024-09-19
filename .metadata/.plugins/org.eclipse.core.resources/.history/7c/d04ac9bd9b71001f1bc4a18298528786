@@ -1,0 +1,14 @@
+
+public class Coffee {
+
+}
+class BoilWater{
+	public void boil() {
+		System.out.println("Step 1 : Boiling water");
+	}
+}
+class AddCoffee{
+	public void boil() {
+		System.out.println("Step 1 : Boiling water");
+	}
+}

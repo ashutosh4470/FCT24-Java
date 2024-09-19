@@ -1,0 +1,10 @@
+package bank;
+
+public class BankTest {
+
+}
+
+final class Bank{
+	private String bankName;
+	private double balance;
+}

@@ -1,0 +1,18 @@
+
+public class CricketTest {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+class Cricketer{
+	int rank;
+	String cricketerName;
+	int age;
+	float strikeRate;
+	int numberOfCenturies;
+	int numberOfFours;
+	int numberOfSixers;
+}

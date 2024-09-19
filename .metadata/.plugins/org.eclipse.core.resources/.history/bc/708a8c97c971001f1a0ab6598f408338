@@ -1,0 +1,8 @@
+
+public class PointTest {
+
+}
+class Point2D{
+	private int x;
+	private int y;
+}

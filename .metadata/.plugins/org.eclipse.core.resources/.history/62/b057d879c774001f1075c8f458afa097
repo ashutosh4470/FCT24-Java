@@ -1,0 +1,145 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class HospitalTest {
+	public static void main(String[] args) {
+		Patient patient1 = new Patient("xyz", 79);
+		Patient patient2 = new Patient("pqr", 80);
+
+		Doctor doctor1 = new Doctor("Ram", "Surgeon");
+		Doctor doctor2 = new Doctor("Shyam", "Heart Surgeon");
+
+		Hospital hospital = new Hospital("Wockhardt", "Mumbai");
+
+		hospital.addDoctor(doctor1);
+		hospital.addDoctor(doctor2);
+
+		hospital.addPatient(patient1);
+		hospital.addPatient(patient2);
+
+		Consultation consultation1 = hospital.produceConsultations(doctor1, patient1);
+		Consultation consultation2 = hospital.produceConsultations(doctor2, patient2);
+		hospital.displayHospitalInfo();
+		System.out.println(consultation1);
+		System.out.println(consultation2);
+
+		
+	}
+}
+
+class Doctor {
+	private String name;
+	private String specialization;
+
+	public Doctor(String name, String specialization) {
+		this.name = name;
+		this.specialization = specialization;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getSpecialization() {
+		return specialization;
+	}
+
+	public String toString() {
+		return "Doctor [name=" + name + ", specialization=" + specialization + "]";
+	}
+}
+
+class Patient {
+	private String name;
+	private int age;
+
+	public Patient(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String toString() {
+		return "Patient [name=" + name + ", age=" + age + "]";
+	}
+}
+
+class Hospital {
+	private String hospitalName;
+	private String location;
+	private List<Doctor> doctors; // hasA
+	private List<Patient> patients; // hasA
+	private List<Consultation> consultations; // hasA
+
+	public Hospital(String hospitalName, String location) {
+		this.hospitalName = hospitalName;
+		this.location = location;
+		this.doctors = new ArrayList<>();
+		this.patients = new ArrayList<>();
+		this.consultations = new ArrayList<>();
+	}
+
+	public void addDoctor(Doctor doctor) { // usesA
+		doctors.add(doctor);
+	}
+
+	public void addPatient(Patient patient) { // usesA
+		patients.add(patient);
+	}
+
+	public Consultation produceConsultations(Doctor doctor, Patient patient) {
+		Consultation consultation = new Consultation(doctor, patient);
+		consultations.add(consultation);
+		return consultation;
+	}
+
+	public void displayHospitalInfo() {
+		System.out.println("Hospital Name: " + hospitalName);
+		System.out.println("Hospital Location: " + location);
+
+		System.out.println("Doctors:");
+		for (Doctor doctor : doctors) {
+			System.out.println(doctor);
+		}
+
+		System.out.println("Patients:");
+		for (Patient patient : patients) {
+			System.out.println(patient);
+		}
+
+		System.out.println("Consultation:");
+
+	}
+}
+
+class Consultation {
+	private Doctor doctor;
+	private Patient patient;
+
+	public Consultation(Doctor doctor, Patient patient) {
+		this.doctor = doctor;
+		this.patient = patient;
+	}
+
+	public Doctor getDoctor() {
+		return doctor;
+	}
+
+	public Patient getPatient() {
+		return patient;
+	}
+
+	@Override
+	public String toString() {
+		return "Consultation [doctor=" + doctor + ", patient=" + patient + "]";
+	}
+	
+
+}

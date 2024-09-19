@@ -1,0 +1,16 @@
+package jungle;
+
+import jungle.river.Fish;
+import jungle.river.Frog;
+import jungle.tree.Monkey;
+
+public class WildLifeTest {
+	public static void main(String[] args) {
+		Frog frog = new Frog();
+		frog.jump();
+		Fish fish = new Fish();
+		fish.swim();
+		Monkey monkey = new Monkey();
+		monkey.jump();
+	}
+}

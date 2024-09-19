@@ -1,0 +1,22 @@
+package bank;
+
+public class BankTest {
+
+}
+
+final class Bank{
+	private String bankName;
+	private double balance;
+	
+	public Bank(String bankName,double balance) {
+		this.bankName = bankName;
+		this.balance = balance;
+	}
+	
+	public final void createAccount(String accType) {
+        System.out.println(accType + " account created at " + bankName);
+	}
+	public final void closeAccount(String accType) {
+        System.out.println(accountType + " account closed at " + bankName);
+    }
+}

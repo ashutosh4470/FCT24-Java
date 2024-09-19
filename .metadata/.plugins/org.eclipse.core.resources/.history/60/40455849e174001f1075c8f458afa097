@@ -1,0 +1,19 @@
+package jungle.tree;
+
+public class Parrot {
+	void fly() {
+		System.out.println("Parrot is flying...");
+	}
+
+}
+class Monkey{
+	void jump() {
+		System.out.println("Monkey is jumping...");
+	}
+}
+class Sparrow{
+
+	void chirp() {
+		System.out.println("Sparrow is chirping...");
+	}
+}

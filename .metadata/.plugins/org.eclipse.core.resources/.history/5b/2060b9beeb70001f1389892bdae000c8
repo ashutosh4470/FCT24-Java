@@ -1,0 +1,12 @@
+
+public class CricketTest {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
+class Cricketer{
+	int rank;
+}

@@ -1,0 +1,7 @@
+package jungle.tree;
+
+public class Monkey{
+	void jump() {
+		System.out.println("Monkey is jumping...");
+	}
+}

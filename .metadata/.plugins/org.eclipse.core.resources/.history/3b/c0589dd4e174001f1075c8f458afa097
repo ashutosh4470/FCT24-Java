@@ -1,0 +1,7 @@
+import jungle.river;
+public class WildLifeTest {
+	public static void main(String[] args) {
+		Frog frog = new Frog();
+		frog.jump();
+	}
+}

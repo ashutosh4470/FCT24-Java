@@ -1,0 +1,12 @@
+package jungle;
+
+import jungle.cave.Tiger;
+import jungle.river.Frog;
+import jungle.tree;
+
+public class WildLifeTest {
+	public static void main(String[] args) {
+		
+	}
+
+}

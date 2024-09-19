@@ -1,0 +1,8 @@
+package jungle.river;
+
+public class Fish {
+
+	void swim() {
+		System.out.println("Fish is swimming...");
+	}
+}
