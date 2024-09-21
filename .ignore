@@ -1,0 +1,11 @@
+# Ignore the temp folder
+.metadata/
+.settings/
+.bin/
+
+# Ignore all log files
+*.classpath
+*.project
+
+# Ignore a specific file
+secret-config.txt

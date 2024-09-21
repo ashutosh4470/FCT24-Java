@@ -110,13 +110,5 @@ class Instructor{
 		System.out.println("\tInstructor Name : "+name);
 		System.out.println("\tYear of Experience : "+yearOfExperiences);
 		System.out.println("\tExpertise : "+expertise);
-	}
-	
+	}	
 }
-
-	
-
-
-
-
-
